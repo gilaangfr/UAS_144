@@ -1,0 +1,434 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Navbar section */
+.navbar {
+  background-color: #2a2438;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem !important;
+  transition: color 200ms ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #5c5470 !important;
+}
+
+.nav-link {
+  font-family: "Rubik", sans-serif;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #5c5470 !important;
+}
+
+/* Intro section */
+#intro {
+  background-color: #352f44;
+}
+
+#intro .row {
+  padding: 8rem 0;
+}
+
+.text-content {
+  color: #fff;
+}
+
+.text-content span {
+  color: #5c5470;
+}
+
+#intro h1 {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 1rem;
+}
+
+#intro h3 {
+  font-size: 1.5rem;
+  max-width: 35ch;
+  margin-bottom: 2rem;
+}
+
+#intro button {
+  padding: 1rem 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #352f44;
+  z-index: 1;
+  background: white;
+  position: relative;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+#intro button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: #5c5470;
+  z-index: -1;
+  transition: all 250ms;
+}
+
+#intro button:hover {
+  color: #e8e8e8;
+}
+
+#intro button:hover::before {
+  width: 100%;
+}
+
+#intro img {
+  border-radius: 1rem;
+}
+
+/* Login section */
+.connect {
+  background: #5c5470;
+  padding: 6rem 0;
+}
+
+.connect h1 {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.connect h1 span {
+  color: #5c5470;
+}
+
+.connect button {
+  padding: 0.5rem 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #352f44;
+  z-index: 1;
+  background: hsl(0, 0%, 91%);
+  position: relative;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.connect button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: #5c5470;
+  z-index: -1;
+  transition: all 250ms;
+}
+
+.connect button:hover {
+  color: #e8e8e8;
+}
+
+.connect button:hover::before {
+  width: 100%;
+}
+
+.connect img {
+  border-radius: 1rem;
+}
+
+.connect form .form-element {
+  margin-bottom: 1rem;
+}
+
+.connect form .form-element input {
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.connect form p {
+  color: #5c5470;
+}
+
+.connect form p:hover {
+  cursor: pointer;
+}
+
+/* our creations section */
+#creations {
+  background-color: #352f44;
+  padding: 6rem;
+}
+
+#creations h1 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 3rem;
+}
+
+#creations h1 span {
+  color: #dbd8e3;
+}
+
+.my-card {
+  width: 248px;
+  height: 450px;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.my-card img {
+  width: 248px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+}
+
+.card-info {
+  padding-left: 1.2rem;
+  position: absolute;
+  color: white;
+  transition: 500ms ease-in-out;
+}
+
+.card-info p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+
+.my-card:hover {
+  cursor: pointer;
+}
+
+.my-card:hover .card-info {
+  bottom: 1.5rem;
+}
+
+.my-card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.my-card:hover img {
+  scale: 1.1;
+  overflow: hidden;
+}
+
+/* footer section */
+#footer {
+  background: #352f44;
+}
+
+.widget-about h3 {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+
+.widget-about h3 span {
+  color: #5c5470;
+}
+
+.footer-menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  list-style: none;
+}
+
+.footer-menu a {
+  text-decoration: none;
+}
+
+.footer a:focus,
+a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: hsl(231, 6%, 56%);
+  font-weight: 300;
+}
+
+.footer a {
+  color: #dbd8e3;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.footer-big {
+  padding: 6.5625rem 0 4rem 0;
+}
+
+.footer-big .footer-widget {
+  margin-bottom: 1.5rem;
+}
+
+.footer-big .footer-menu ul li a,
+.footer-big p,
+.footer-big ul li {
+  color: #dbd8e3;
+}
+
+.footer-menu {
+  padding-left: 3rem;
+}
+
+.footer-menu ul li a {
+  font-size: 1rem;
+  line-height: 2rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-menu ul li a:hover {
+  color: #5c5470;
+}
+
+.footer-menu--1 {
+  width: 100%;
+}
+
+.footer-widget-title {
+  transform: translatey(-7px);
+  color: white;
+  line-height: 2.625rem;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.mini-footer {
+  background: #5c5470;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.mini-footer p {
+  margin: 0;
+  line-height: 1.625rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.mini-footer p a {
+  text-decoration: none;
+  color: #352f44;
+}
+
+.widget-about p {
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .footer-menu {
+    padding-left: 0;
+  }
+}
